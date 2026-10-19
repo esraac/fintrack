@@ -1,4 +1,4 @@
-package com.fintrack.backend.expection;
+package com.fintrack.backend.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
