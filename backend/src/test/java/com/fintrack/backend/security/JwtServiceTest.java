@@ -51,4 +51,12 @@ class JwtServiceTest {
         JwtService service = new JwtService(newSecret(), 60_000);
         assertFalse(service.isTokenValid("bu.bir.token.degil"));
     }
+
+    @Test
+    void extractUserId_returnsIdFromToken() {
+        JwtService service = new JwtService(newSecret(), 60_000);
+        String token = service.generateToken(user);
+
+        assertEquals(user.getId(), service.extractUserId(token));
+    }
 }
