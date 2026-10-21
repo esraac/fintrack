@@ -1,4 +1,4 @@
-package com.fintrack.backend.auth.dto;
+package com.fintrack.backend.user.dto;
 
 import java.util.UUID;
 
